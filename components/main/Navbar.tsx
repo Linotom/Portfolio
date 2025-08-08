@@ -19,7 +19,20 @@ const Navbar = () => {
           />
 
           <span className="font-bold ml-[10px] hidden md:block text-gray-300">
-            WebChain Dev
+<b
+  style={{
+    fontFamily: 'Montserrat, sans-serif',
+    fontSize: '30px',
+    fontWeight: '400',  // Regular (not bold)
+    letterSpacing: '1.5px',
+    color: 'white' // Fix: remove '#' before 'white'
+  }}
+>
+  Lino Tom
+</b>
+
+
+
           </span>
         </a>
 
@@ -37,17 +50,24 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="flex flex-row gap-5">
-          {Socials.map((social) => (
-            <Image
-              src={social.src}
-              alt={social.name}
-              key={social.name}
-              width={24}
-              height={24}
-            />
-          ))}
-        </div>
+      <div className="flex flex-row gap-5">
+  {Socials.map((social) => (
+    <a
+      key={social.name}
+      href={social.href}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Image
+        src={social.src}
+        alt={social.name}
+        width={24}
+        height={24}
+      />
+    </a>
+  ))}
+</div>
+
       </div>
     </div>
   );

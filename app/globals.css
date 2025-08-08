@@ -69,3 +69,14 @@
 html {
   scroll-behavior: smooth;
 }
+/* styles/globals.css or styles/Approach.css */
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.text-purple {
+  color: #A855F7; /* Tailwind purple-500 or custom */
+}

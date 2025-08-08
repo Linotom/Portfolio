@@ -6,65 +6,123 @@ import {
   RxTwitterLogo,
   RxLinkedinLogo,
 } from "react-icons/rx";
+import Image from 'next/image';
 
 import { FaYoutube } from "react-icons/fa";
 
+
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] ">
-        <div className="w-full flex flex-col items-center justify-center m-auto">
-            <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
-                
+    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px]">
+      <div className="w-full flex flex-col items-center justify-center m-auto">
+        <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
 
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">Community</div>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <FaYoutube />
-                        <span className="text-[15px] ml-[6px]">Youtube</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxGithubLogo />
-                        <span className="text-[15px] ml-[6px]">Github</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxDiscordLogo />
-                        <span className="text-[15px] ml-[6px]">Discord</span>    
-                    </p>
-                </div>
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">Social Media</div>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <FaYoutube />
-                        <span className="text-[15px] ml-[6px]">Instagram</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxGithubLogo />
-                        <span className="text-[15px] ml-[6px]">Twitter</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxDiscordLogo />
-                        <span className="text-[15px] ml-[6px]">Linkedin</span>    
-                    </p>
-                </div>
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">About</div>
-                   <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                     
-                        <span className="text-[15px] ml-[6px]">Become Sponsor</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                      
-                        <span className="text-[15px] ml-[6px]">Learning about me</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                  
-                        <span className="text-[15px] ml-[6px]">mifwebchain@gmail.com</span>    
-                    </p>
-                </div>
-            </div>
+          {/* Community Section */}
+          <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
+            <div className="font-bold text-[16px]">Community</div>
+
+            <a
+              href="https://github.com/Linotom"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-row items-center my-[15px] cursor-pointer"
+            >
+              <RxGithubLogo />
+              <span className="text-[15px] ml-[6px]">Github</span>
+            </a>
+
+            <a
+              href="http://discordapp.com/users/1362777561289064610"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-row items-center my-[15px] cursor-pointer"
+            >
+              <RxDiscordLogo />
+              <span className="text-[15px] ml-[6px]">Discord</span>
+            </a>
+
+            <a
+              href="https://www.reddit.com/u/itsghost007/s/ZaosJagxl7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-row items-center my-[15px] cursor-pointer"
+            >
+              <Image
+                src="/reddit.png"
+                alt="Reddit"
+                width={18}
+                height={18}
+              />
+              <span className="text-[15px] ml-[6px]">Reddit</span>
+            </a>
+          </div>
+
+          {/* Social Media Section */}
+          <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
+            <div className="font-bold text-[16px]">Social Media</div>
+
+            <a
+              href="https://www.instagram.com/_lino_007_?igsh=MXJuYnByYXRsNnhtYw=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-row items-center my-[15px] cursor-pointer"
+            >
+              <FaYoutube />
+              <span className="text-[15px] ml-[6px]">Instagram</span>
+            </a>
+
+            <a
+              href="https://x.com/Ghos22186387764?s=08"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-row items-center my-[15px] cursor-pointer"
+            >
+              <RxGithubLogo />
+              <span className="text-[15px] ml-[6px]">Twitter</span>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/lino-tom-31828b26a/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-row items-center my-[15px] cursor-pointer"
+            >
+              <RxDiscordLogo />
+              <span className="text-[15px] ml-[6px]">LinkedIn</span>
+            </a>
+          </div>
+
+          {/* About Section */}
+          <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
+            <div className="font-bold text-[16px]">About</div>
+
+            <a
+              href="mailto:linotom04@gmail.com"
+              className="flex flex-row items-center my-[15px] cursor-pointer"
+            >
+              <span className="text-[15px] ml-[6px]">Collaborate with Me</span>
+            </a>
+
+            <a
+              href="mailto:linotom04@gmail.com"
+              className="flex flex-row items-center my-[15px] cursor-pointer"
+            >
+              <span className="text-[15px] ml-[6px]">
+                Let’s Build Something Together
+              </span>
+            </a>
+
+            <a
+              href="mailto:linotom04@gmail.com"
+              className="flex flex-row items-center my-[15px] cursor-pointer"
+            >
+              <span className="text-[15px] ml-[6px]">linotom04@gmail.com</span>
+            </a>
+          </div>
+        </div>
 
             <div className="mb-[20px] text-[15px] text-center">
-                &copy; WebChain Dev 2023 Inc. All rights reserved
+                &copy; 2025 Lino Tom Dev. All rights reserved
             </div>
         </div>
     </div>
