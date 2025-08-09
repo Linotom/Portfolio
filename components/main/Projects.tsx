@@ -10,22 +10,27 @@ const Projects = () => {
       <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
         My Projects
       </h1>
+
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
+        
         <ProjectCard
-          src="/NextWebsite.png"
-          title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/learnquest.png"
+          title="LearnQuest"
+          description="An AI-powered learning platform that adapts to each student's needs and recommends personalized learning paths."
         />
+
         <ProjectCard
-          src="/CardImage.png"
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/zentry-ai.png"
+          title="Zentry – AI Admission Agent"
+          description="An intelligent admission assistant that guides students through the application process, answering queries in real-time."
         />
+
         <ProjectCard
-          src="/SpaceWebsite.png"
-          title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/visitor-entry.png"
+          title="Visitor Entry Website"
+          description="A digital visitor management system that streamlines check-ins, tracks visits, and enhances building security."
         />
+
       </div>
     </div>
   );
