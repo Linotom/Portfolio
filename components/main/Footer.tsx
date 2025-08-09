@@ -2,9 +2,13 @@ import React from "react";
 import {
   RxDiscordLogo,
   RxGithubLogo,
+  RxTwitterLogo,
+  RxInstagramLogo,
+  RxLinkedinLogo,
 } from "react-icons/rx";
 import Image from 'next/image';
 import { FaYoutube } from "react-icons/fa";
+
 
 const Footer = () => {
   return (
@@ -62,7 +66,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="flex flex-row items-center my-[15px] cursor-pointer"
             >
-              <FaYoutube />
+              <RxInstagramLogo />
               <span className="text-[15px] ml-[6px]">Instagram</span>
             </a>
 
@@ -72,7 +76,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="flex flex-row items-center my-[15px] cursor-pointer"
             >
-              <RxGithubLogo />
+              <RxTwitterLogo />
               <span className="text-[15px] ml-[6px]">Twitter</span>
             </a>
 
@@ -82,7 +86,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="flex flex-row items-center my-[15px] cursor-pointer"
             >
-              <RxDiscordLogo />
+              <RxLinkedinLogo />
               <span className="text-[15px] ml-[6px]">LinkedIn</span>
             </a>
           </div>
