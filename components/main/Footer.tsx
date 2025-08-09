@@ -93,7 +93,7 @@ const Footer = () => {
 
             {/* Collaborate with Me */}
             <a
-              href="mailto:linotom04@gmail.com?subject=Collaboration%20Request"
+              href="mailto:linotom04@gmail.com?subject=Collaboration%20Request&body=Hi%20Lino"
               className="flex flex-row items-center my-[15px] cursor-pointer"
             >
               <span className="text-[15px] ml-[6px]">Collaborate with Me</span>
@@ -101,7 +101,7 @@ const Footer = () => {
 
             {/* Build Something Together */}
             <a
-              href="mailto:linotom04@gmail.com?subject=Let's%20Build%20Something%20Together"
+              href="mailto:linotom04@gmail.com?subject=Let's%20Build%20Something%20Together&body=Hi%20Lino"
               className="flex flex-row items-center my-[15px] cursor-pointer"
             >
               <span className="text-[15px] ml-[6px]">
