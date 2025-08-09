@@ -2,11 +2,8 @@ import React from "react";
 import {
   RxDiscordLogo,
   RxGithubLogo,
-  RxInstagramLogo,
-  RxTwitterLogo,
-  RxLinkedinLogo,
 } from "react-icons/rx";
-import Image from "next/image";
+import Image from 'next/image';
 import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
@@ -65,7 +62,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="flex flex-row items-center my-[15px] cursor-pointer"
             >
-              <RxInstagramLogo />
+              <FaYoutube />
               <span className="text-[15px] ml-[6px]">Instagram</span>
             </a>
 
@@ -75,7 +72,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="flex flex-row items-center my-[15px] cursor-pointer"
             >
-              <RxTwitterLogo />
+              <RxGithubLogo />
               <span className="text-[15px] ml-[6px]">Twitter</span>
             </a>
 
@@ -85,32 +82,41 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="flex flex-row items-center my-[15px] cursor-pointer"
             >
-              <RxLinkedinLogo />
+              <RxDiscordLogo />
               <span className="text-[15px] ml-[6px]">LinkedIn</span>
             </a>
           </div>
 
-          {/* About Section (Clickable as whole) */}
-          <a
-            href="mailto:linotom04@gmail.com?subject=Let's%20Work%20Together&body=Hi%20Lino,"
-            className="min-w-[200px] h-auto flex flex-col items-center justify-start cursor-pointer hover:opacity-80 transition-opacity"
-          >
+          {/* About Section */}
+          <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
             <div className="font-bold text-[16px]">About</div>
 
-            <div className="flex flex-row items-center my-[15px]">
+            {/* Collaborate with Me */}
+            <a
+              href="mailto:linotom04@gmail.com?subject=Collaboration%20Request"
+              className="flex flex-row items-center my-[15px] cursor-pointer"
+            >
               <span className="text-[15px] ml-[6px]">Collaborate with Me</span>
-            </div>
+            </a>
 
-            <div className="flex flex-row items-center my-[15px]">
+            {/* Build Something Together */}
+            <a
+              href="mailto:linotom04@gmail.com?subject=Let's%20Build%20Something%20Together"
+              className="flex flex-row items-center my-[15px] cursor-pointer"
+            >
               <span className="text-[15px] ml-[6px]">
                 Let’s Build Something Together
               </span>
-            </div>
+            </a>
 
-            <div className="flex flex-row items-center my-[15px]">
+            {/* Direct Email */}
+            <a
+              href="mailto:linotom04@gmail.com"
+              className="flex flex-row items-center my-[15px] cursor-pointer"
+            >
               <span className="text-[15px] ml-[6px]">linotom04@gmail.com</span>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
 
         <div className="mb-[20px] text-[15px] text-center">
