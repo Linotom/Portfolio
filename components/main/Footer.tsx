@@ -6,10 +6,8 @@ import {
   RxTwitterLogo,
   RxLinkedinLogo,
 } from "react-icons/rx";
-import Image from 'next/image';
-
+import Image from "next/image";
 import { FaYoutube } from "react-icons/fa";
-
 
 const Footer = () => {
   return (
@@ -67,7 +65,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="flex flex-row items-center my-[15px] cursor-pointer"
             >
-              <FaYoutube />
+              <RxInstagramLogo />
               <span className="text-[15px] ml-[6px]">Instagram</span>
             </a>
 
@@ -77,7 +75,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="flex flex-row items-center my-[15px] cursor-pointer"
             >
-              <RxGithubLogo />
+              <RxTwitterLogo />
               <span className="text-[15px] ml-[6px]">Twitter</span>
             </a>
 
@@ -87,46 +85,40 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="flex flex-row items-center my-[15px] cursor-pointer"
             >
-              <RxDiscordLogo />
+              <RxLinkedinLogo />
               <span className="text-[15px] ml-[6px]">LinkedIn</span>
             </a>
           </div>
 
-          {/* About Section */}
-          <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
+          {/* About Section (Clickable as whole) */}
+          <a
+            href="mailto:linotom04@gmail.com?subject=Let's%20Work%20Together&body=Hi%20Lino,"
+            className="min-w-[200px] h-auto flex flex-col items-center justify-start cursor-pointer hover:opacity-80 transition-opacity"
+          >
             <div className="font-bold text-[16px]">About</div>
 
-            <a
-              href="mailto:linotom04@gmail.com"
-              className="flex flex-row items-center my-[15px] cursor-pointer"
-            >
+            <div className="flex flex-row items-center my-[15px]">
               <span className="text-[15px] ml-[6px]">Collaborate with Me</span>
-            </a>
+            </div>
 
-            <a
-              href="mailto:linotom04@gmail.com"
-              className="flex flex-row items-center my-[15px] cursor-pointer"
-            >
+            <div className="flex flex-row items-center my-[15px]">
               <span className="text-[15px] ml-[6px]">
                 Let’s Build Something Together
               </span>
-            </a>
-
-            <a
-              href="mailto:linotom04@gmail.com"
-              className="flex flex-row items-center my-[15px] cursor-pointer"
-            >
-              <span className="text-[15px] ml-[6px]">linotom04@gmail.com</span>
-            </a>
-          </div>
-        </div>
-
-            <div className="mb-[20px] text-[15px] text-center">
-                &copy; 2025 Lino Tom Dev. All rights reserved
             </div>
-        </div>
-    </div>
-  )
-}
 
-export default Footer
+            <div className="flex flex-row items-center my-[15px]">
+              <span className="text-[15px] ml-[6px]">linotom04@gmail.com</span>
+            </div>
+          </a>
+        </div>
+
+        <div className="mb-[20px] text-[15px] text-center">
+          &copy; 2025 Lino Tom Dev. All rights reserved
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;
